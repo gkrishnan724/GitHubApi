@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app = "MyApp">
+<head>
+    <title>Simple API</title>
+    <script src="Vendors/angular/angular.js"></script>
+    <script src="components/JS/app.js"></script>
+</head>
+<body ng-controller="DataFetch">
+
+<label>Enter username</label><input ng-model = "Username"><button ng-click="Display(Username)">Go!</button>
+<div>
+    <div ng-if = "Loading == 1" ><h3>Loading..<h3></div>
+
+    <img ng-src = "{{avatar}}">
+    {{bio}}
+</div>
+</body>
+</html>
